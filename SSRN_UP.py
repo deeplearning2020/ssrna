@@ -65,8 +65,8 @@ def res4_model_ss():
 
     return model_res4
 
-uPavia = sio.loadmat('/home/zilong/SSRN/datasets/UP/PaviaU.mat')
-gt_uPavia = sio.loadmat('/home/zilong/SSRN/datasets/UP/PaviaU_gt.mat')
+uPavia = sio.loadmat('PaviaU.mat')
+gt_uPavia = sio.loadmat('PaviaU_gt.mat')
 data_IN = uPavia['paviaU']
 gt_IN = gt_uPavia['paviaU_gt']
 print((data_IN.shape))

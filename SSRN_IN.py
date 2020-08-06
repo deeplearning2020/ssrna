@@ -65,9 +65,9 @@ def res4_model_ss():
 
     return model_res4
 
-mat_data = sio.loadmat('/home/zilong/SSRN/datasets/IN/Indian_pines_corrected.mat')
+mat_data = sio.loadmat('Indian_pines_corrected.mat')
 data_IN = mat_data['indian_pines_corrected']
-mat_gt = sio.loadmat('/home/zilong/SSRN/datasets/IN/Indian_pines_gt.mat')
+mat_gt = sio.loadmat('Indian_pines_gt.mat')
 gt_IN = mat_gt['indian_pines_gt']
 print((data_IN.shape))
 
