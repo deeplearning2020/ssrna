@@ -310,7 +310,7 @@ def _handle_dim_ordering():
     global CONV_DIM2
     global CONV_DIM3
     global CHANNEL_AXIS
-    if K.image_dim_ordering() == 'tf':
+    if K.image_data_format() == 'tf':
         CONV_DIM1 = 1
         CONV_DIM2 = 2
         CONV_DIM3 = 3
