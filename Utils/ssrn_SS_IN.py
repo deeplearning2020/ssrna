@@ -305,8 +305,7 @@ def bottleneck(nb_filter, init_subsample=(1, 1, 1), is_first_block_of_first_laye
     return f
 
 
-def _handle_
-ordering():
+def _handle_dim_ordering():
     global CONV_DIM1
     global CONV_DIM2
     global CONV_DIM3
