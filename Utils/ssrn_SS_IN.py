@@ -305,7 +305,8 @@ def bottleneck(nb_filter, init_subsample=(1, 1, 1), is_first_block_of_first_laye
     return f
 
 
-def _handle_dim_ordering():
+def _handle_
+ordering():
     global CONV_DIM1
     global CONV_DIM2
     global CONV_DIM3
@@ -350,7 +351,7 @@ class ResnetBuilder(object):
             raise Exception("Input shape should be a tuple (nb_channels, kernel_dim1, kernel_dim2, kernel_dim3)")
 
         # Permute dimension order if necessary
-        if K.image_dim_ordering() == 'tf':
+        if K.image_data_format == 'tf':
             input_shape = (input_shape[1], input_shape[2],input_shape[3], input_shape[0])
 
         # Load function from str if needed.
